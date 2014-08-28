@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lux Lignum</string>
+    <string name="on_message">On</string>
+    <string name="off_message">Off</string>
+    <string name="exit">Exit</string>
+    <string name="unsupported">Your device is unsupported by LuxLignum. \r\r Your phone must have a camera flash and support \"FLASH_TORCH_MODE\" to be compatible with LuxLignum.</string>
+
+</resources>

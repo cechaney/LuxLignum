@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="spm.com.luxlignum">
+
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.FLASHLIGHT"></uses-permission>
+
+    <uses-feature android:name="android.hardware.camera"></uses-feature>
+    <uses-feature android:name="android.hardware.camera.autofocus"></uses-feature>
+    <uses-feature android:name="android.hardware.camera.flash"></uses-feature>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/luxlignum"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/toTitle"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="LuxLignumWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/luxlignum_appwidget_info" />
+        </receiver>
+
+    </application>
+
+    <!--
+    Color palette via ColourLovers
+    http://www.colourlovers.com/palette/819412/Here_Comes_the_Sun
+    -->
+
+
+</manifest>
